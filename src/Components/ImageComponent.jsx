@@ -1,11 +1,12 @@
-import React from "react"
-
 const ImageComponent = (props) => {
-  const { name, img } = props
+  const { name, img, handleUserChoice } = props
+
   return (
-    <button className="btn">
-      <img src={`./assets/${img}`} alt={name} />
-    </button>
+    <>
+      <button className="btn" onClick={() => handleUserChoice(name)}>
+        <img src={`./assets/${img}`} alt={name} />
+      </button>
+    </>
   )
 }
 
