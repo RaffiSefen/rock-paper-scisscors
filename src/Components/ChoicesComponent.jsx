@@ -1,9 +1,9 @@
 const ChoicesComponent = (props) => {
-  const { yourChoice } = props
+  const { yourChoice, computerChoice } = props
   return (
     <div>
       <p>You:{yourChoice}</p>
-      <p>Computer:</p>
+      <p>Computer:{computerChoice}</p>
     </div>
   )
 }
